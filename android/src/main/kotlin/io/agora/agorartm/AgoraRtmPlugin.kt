@@ -38,7 +38,7 @@ class AgoraRtmPlugin : FlutterPlugin, MethodCallHandler {
         binaryMessenger: BinaryMessenger
     ) {
         applicationContext = context.applicationContext
-        methodChannel = MethodChannel(binaryMessenger, "io.agora.agorartm")
+        methodChannel = MethodChannel(binaryMessenger, "io.agora.rtm")
         methodChannel.setMethodCallHandler(this)
     }
 
